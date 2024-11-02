@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hexlet-code"
+name = "hexlet-code609"
 version = "0.1.0"
 description = ""
 authors = ["Laura609 <laura.metnietse@gmail.com>"]
@@ -11,6 +11,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.13"
+prompt = "^0.4.1"
 
 
 [build-system]
