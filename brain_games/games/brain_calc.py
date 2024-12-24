@@ -24,7 +24,7 @@ def play_game():
     """Основная логика игры"""
     rounds = 3
 
-    # Сообщение о начале игры и приветствие (выводится после приветствия)
+    # Приветствие
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
@@ -32,6 +32,7 @@ def play_game():
     # Сообщение о начале игры
     print("What is the result of the expression?")
 
+    # Вопросы генерируются после приветствия
     for _ in range(rounds):
         # Генерация и вывод вопроса
         question, correct_answer = generate_question()
