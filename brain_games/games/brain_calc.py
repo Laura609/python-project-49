@@ -1,5 +1,6 @@
 import random
 import operator
+from brain_games.engine import run_game
 
 # Операции для игры
 OPERATIONS = {
@@ -22,21 +23,23 @@ def generate_question():
 def play_game():
     """Основная логика игры"""
     rounds = 3
-    print("Welcome to the Brain Games!")  # Приветствие
-    name = input("May I have your name? ")  # Запрос имени
+    print("Welcome to the Brain Games!")
+    name = input("May I have your name? ")
     print(f"Hello, {name}!")  # Приветствие игрока
     print("What is the result of the expression?")
 
     # Начало игрового процесса: цикл вопросов
     for _ in range(rounds):
-        question, correct_answer = generate_question()  # Генерация вопроса
+        question, correct_answer = generate_question()
         print(f"Question: {question}")  # Вопрос в нужном формате
         user_answer = input("Your answer: ")  # Ответ игрока
 
-        if user_answer != correct_answer:
+        if user_answer == correct_answer:
+            print("Correct!")
+        else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             return
 
-    # Единственное сообщение в конце игры
-    print(f"Congratulations, {name}!")  # Финальный вывод
+    print(f"Congratulations, {name}!")
+
