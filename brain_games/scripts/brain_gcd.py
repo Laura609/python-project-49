@@ -34,7 +34,7 @@ def gcd_game():
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
-            return  # Если ответ неверный, игра завершается
+            return
 
     print(f'Congratulations, {name}!')
 
