@@ -1,7 +1,6 @@
 # brain_games/games/brain_calc.py
 import random
 import operator
-from brain_games.engine import run_game
 
 # Операции для игры
 OPERATIONS = {
@@ -9,6 +8,7 @@ OPERATIONS = {
     '-': operator.sub,
     '*': operator.mul,
 }
+
 
 def generate_question():
     """Генерация случайного математического выражения и правильного ответа"""
@@ -32,9 +32,8 @@ def play_game():
     # Сообщение о начале игры
     print("What is the result of the expression?")
 
-    # Вопросы генерируются после приветствия
+    # Игровой процесс
     for _ in range(rounds):
-        # Генерация и вывод вопроса
         question, correct_answer = generate_question()
         print(f"Question: {question}")  # Это должно быть первым выводом
 
