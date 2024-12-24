@@ -1,4 +1,4 @@
-# brain_games/games/brain_calc.py
+# brain_games/scripts/brain_calc.py
 import random
 import operator
 
@@ -20,7 +20,7 @@ def generate_question():
     return question, str(correct_answer)
 
 
-def play_game():
+def main():
     """Основная логика игры"""
     rounds = 3
 
@@ -47,3 +47,4 @@ def play_game():
             return
 
     print(f"Congratulations, {name}!")
+
