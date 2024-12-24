@@ -24,13 +24,19 @@ def generate_question():
 def play_game():
     """Основная логика игры"""
     rounds = 3
-    name = input("May I have your name? ")
+
+    # Попросим имя пользователя только после того, как зададим вопрос
+    question, correct_answer = generate_question()
+    print(f"Question: {question}")  # Это должно быть первым выводом
+
+    name = input("May I have your name? ")  # Теперь имя будет запрашиваться после первого вопроса
     print(f"Hello, {name}!")
     print("What is the result of the expression?")
 
     for _ in range(rounds):
         question, correct_answer = generate_question()
-        print(f"Question: {question}")  # This must be printed right away, as required by the tests
+        print(f"Question: {question}")  # Вопрос теперь печатается сразу
+
         user_answer = input("Your answer: ")
 
         if user_answer == correct_answer:
