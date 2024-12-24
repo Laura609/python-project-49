@@ -10,7 +10,6 @@ OPERATIONS = {
     '*': operator.mul,
 }
 
-
 def generate_question():
     """Генерация случайного математического выражения и правильного ответа"""
     num1 = random.randint(1, 100)
@@ -25,7 +24,7 @@ def play_game():
     """Основная логика игры"""
     rounds = 3
 
-    # Приветствие
+    # Сообщение о начале игры и приветствие (выводится после приветствия)
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
@@ -34,6 +33,7 @@ def play_game():
     print("What is the result of the expression?")
 
     for _ in range(rounds):
+        # Генерация и вывод вопроса
         question, correct_answer = generate_question()
         print(f"Question: {question}")  # Это должно быть первым выводом
 
