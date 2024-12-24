@@ -9,7 +9,6 @@ OPERATIONS = {
     '*': operator.mul,
 }
 
-
 def generate_question():
     """Генерация случайного математического выражения и правильного ответа"""
     num1 = random.randint(1, 100)
@@ -28,6 +27,7 @@ def play_game():
     print(f"Hello, {name}!")  # Приветствие игрока
     print("What is the result of the expression?")
 
+    # Начало игрового процесса: цикл вопросов
     for _ in range(rounds):
         question, correct_answer = generate_question()  # Генерация вопроса
         print(f"Question: {question}")  # Вопрос в нужном формате
