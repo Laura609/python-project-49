@@ -1,4 +1,3 @@
-# brain_games/scripts/brain_calc.py
 from brain_games.cli import welcome_user
 from brain_games.games.brain_calc import play_game
 

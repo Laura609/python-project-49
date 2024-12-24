@@ -22,11 +22,7 @@ def generate_question():
 def play_game():
     """Основная логика игры"""
     rounds = 3
-    print("Welcome to the Brain Games!")  # Приветствие
-    name = input("May I have your name? ")  # Запрос имени
-    print(f"Hello, {name}!")  # Приветствие игрока
-    print("What is the result of the expression?")
-
+    print("What is the result of the expression?")  # Убираем лишние строки
     # Начало игрового процесса: цикл вопросов
     for _ in range(rounds):
         question, correct_answer = generate_question()  # Генерация вопроса
@@ -37,7 +33,7 @@ def play_game():
             print("Correct!")
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}!")
+            print(f"Let's try again!")
             return
 
-    print(f"Congratulations, {name}!")
+    print(f"Congratulations!")
