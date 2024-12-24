@@ -1,14 +1,12 @@
 import random
 import operator
-from brain_games.engine import run_game
+import sys
 
-# Операции для игры
 OPERATIONS = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
 }
-
 
 def generate_question():
     """Генерация случайного математического выражения и правильного ответа"""
@@ -19,18 +17,17 @@ def generate_question():
     correct_answer = OPERATIONS[operation](num1, num2)
     return question, str(correct_answer)
 
-
 def play_game():
     """Основная логика игры"""
     rounds = 3
-    print("Welcome to the Brain Games!")
-    name = input("May I have your name? ")
+    print("Welcome to the Brain Games!")  # Приветствие
+    name = input("May I have your name? ")  # Запрос имени
     print(f"Hello, {name}!")  # Приветствие игрока
     print("What is the result of the expression?")
 
     # Начало игрового процесса: цикл вопросов
     for _ in range(rounds):
-        question, correct_answer = generate_question()
+        question, correct_answer = generate_question()  # Генерация вопроса
         print(f"Question: {question}")  # Вопрос в нужном формате
         user_answer = input("Your answer: ")  # Ответ игрока
 
@@ -42,4 +39,3 @@ def play_game():
             return
 
     print(f"Congratulations, {name}!")
-
