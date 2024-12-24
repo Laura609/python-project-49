@@ -1,7 +1,7 @@
-# brain_games/scripts/brain_even.py
 import random
 import prompt
 
+# Константы
 ROUNDS_COUNT = 3
 
 
@@ -17,8 +17,10 @@ def generate_question():
     return number, correct_answer
 
 
-def play_game(name):
-    """Запуск игры 'Чётные числа'."""
+def main():
+    print("Welcome to the Brain Games!")
+    name = prompt.string("May I have your name? ")
+    print(f"Hello, {name}!")
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     correct_answers_count = 0
@@ -35,4 +37,4 @@ def play_game(name):
         print("Correct!")
         correct_answers_count += 1
 
-    print(f"Congratulations, {name}!")  # Вывод поздравления после 3 правильных ответов
+    print(f"Congratulations, {name}!")  # Выводим поздравление после 3 правильных ответов
