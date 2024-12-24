@@ -24,14 +24,13 @@ def generate_question():
 def play_game():
     """Основная логика игры"""
     rounds = 3
-    print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
     print("What is the result of the expression?")
 
     for _ in range(rounds):
         question, correct_answer = generate_question()
-        print(f"Question: {question}")
+        print(f"Question: {question}")  # This must be printed right away, as required by the tests
         user_answer = input("Your answer: ")
 
         if user_answer == correct_answer:
