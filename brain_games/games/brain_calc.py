@@ -25,17 +25,17 @@ def play_game():
     """Основная логика игры"""
     rounds = 3
 
-    # Попросим имя пользователя только после того, как зададим вопрос
-    question, correct_answer = generate_question()
-    print(f"Question: {question}")  # Это должно быть первым выводом
-
-    name = input("May I have your name? ")  # Теперь имя будет запрашиваться после первого вопроса
+    # Приветствие
+    print("Welcome to the Brain Games!")
+    name = input("May I have your name? ")
     print(f"Hello, {name}!")
+
+    # Сообщение о начале игры
     print("What is the result of the expression?")
 
     for _ in range(rounds):
         question, correct_answer = generate_question()
-        print(f"Question: {question}")  # Вопрос теперь печатается сразу
+        print(f"Question: {question}")  # Это должно быть первым выводом
 
         user_answer = input("Your answer: ")
 
