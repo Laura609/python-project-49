@@ -1,6 +1,9 @@
 import random
 import prompt
 
+# Константы
+ROUNDS_COUNT = 3
+
 
 def is_even(number):
     """Проверяет, чётное ли число."""
@@ -21,7 +24,7 @@ def main():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     correct_answers_count = 0
-    while correct_answers_count < 3:
+    while correct_answers_count < ROUNDS_COUNT:
         question, correct_answer = generate_question()
         print(f"Question: {question}")
         user_answer = prompt.string("Your answer: ").lower()

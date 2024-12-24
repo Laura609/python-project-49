@@ -1,8 +1,9 @@
-# brain_games/scripts/brain_gcd.py
-
 import random
 import math
 import prompt
+
+# Константы
+ROUNDS_COUNT = 3
 
 
 def gcd_game():
@@ -11,9 +12,7 @@ def gcd_game():
     print(f'Hello, {name}!')
     print('Find the greatest common divisor of given numbers.')
 
-    rounds = 3  # Количество раундов
-
-    for _ in range(rounds):
+    for _ in range(ROUNDS_COUNT):
         # Генерация двух случайных чисел
         num1 = random.randint(1, 100)
         num2 = random.randint(1, 100)
@@ -40,4 +39,3 @@ def gcd_game():
 
 def main():
     gcd_game()
-

@@ -1,6 +1,9 @@
 import random
 import prompt
 
+# Константы
+ROUNDS_COUNT = 3
+
 
 def is_prime(number):
     """Проверка, является ли число простым"""
@@ -19,10 +22,7 @@ def prime_game():
     print(f'Hello, {name}!')
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
-    # Количество раундов
-    rounds = 3
-
-    for _ in range(rounds):
+    for _ in range(ROUNDS_COUNT):
         # Генерация случайного числа
         number = random.randint(1, 100)
 
