@@ -2,6 +2,7 @@ import math
 import random
 import prompt
 
+
 # Константы
 ROUNDS_COUNT = 3
 
