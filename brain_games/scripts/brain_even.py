@@ -33,7 +33,7 @@ def main():
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
                   f"'{correct_answer}'.")
             print(f"Let's try again, {name}!")
-            return  # Завершаем игру при неверном ответе
+            return
 
         print("Correct!")
         correct_answers_count += 1

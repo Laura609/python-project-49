@@ -1,5 +1,5 @@
-import random
 import operator
+import random
 
 # Операции для игры
 OPERATIONS = {
@@ -7,6 +7,7 @@ OPERATIONS = {
     '-': operator.sub,
     '*': operator.mul,
 }
+
 
 def generate_question():
     """Генерация случайного математического выражения и правильного ответа"""
@@ -16,6 +17,7 @@ def generate_question():
     question = f"{num1} {operation} {num2}"
     correct_answer = OPERATIONS[operation](num1, num2)
     return question, str(correct_answer)
+
 
 def play_game(name):
     """Основная логика игры"""
@@ -27,7 +29,7 @@ def play_game(name):
     # Игровой процесс
     for _ in range(rounds):
         question, correct_answer = generate_question()
-        print(f"Question: {question}")  # Это должно быть первым выводом
+        print(f"Question: {question}")
 
         user_answer = input("Your answer: ")
 
