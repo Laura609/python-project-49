@@ -30,11 +30,12 @@ def main():
         user_answer = prompt.string("Your answer: ").lower()
 
         if user_answer != correct_answer:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
+                  f"'{correct_answer}'.")
             print(f"Let's try again, {name}!")
             return  # Завершаем игру при неверном ответе
 
         print("Correct!")
         correct_answers_count += 1
 
-    print(f"Congratulations, {name}!")  # Выводим поздравление после 3 правильных ответов
+    print(f"Congratulations, {name}!")
