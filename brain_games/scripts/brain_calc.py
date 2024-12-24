@@ -3,8 +3,8 @@ from brain_games.games.brain_calc import play_game
 
 
 def main():
-    welcome_user()
-    play_game()
+    name = welcome_user()
+    play_game(name)
 
 
 if __name__ == '__main__':

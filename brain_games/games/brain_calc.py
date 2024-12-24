@@ -1,3 +1,4 @@
+# brain_games/games/brain_calc.py
 import random
 import operator
 
@@ -18,12 +19,8 @@ def generate_question():
     return question, correct_answer
 
 
-def brain_calc():
+def play_game(name):
     """Запуск игры 'Калькулятор' с 3 раундами."""
-    print("Welcome to the Brain Games!")  # Приветствие перед началом игры
-    name = input("May I have your name? ")  # Получаем имя игрока
-    print(f"Hello, {name}!")
-
     rounds = 3
     for _ in range(rounds):
         question, correct_answer = generate_question()
