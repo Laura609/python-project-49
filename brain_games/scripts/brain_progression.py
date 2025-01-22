@@ -22,3 +22,9 @@ def get_rules():
 def play_game(name):
     """Запуск игры с использованием общей логики"""
     run_game(generate_progression, get_rules, name)
+
+
+def main():
+    """Главная функция игры, которая будет запускать логику игры"""
+    name = input("Enter your name: ")
+    play_game(name)
