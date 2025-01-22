@@ -11,16 +11,15 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.13"
 prompt = "^0.4.1"
-brain_games = { path = "brain_games" }
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.1.1"
-ruff = "^0.0.1"
+ruff = "^0.0.2"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]

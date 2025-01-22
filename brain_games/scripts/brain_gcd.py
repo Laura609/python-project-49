@@ -1,7 +1,7 @@
 import random
 import math
 from brain_games.engine import run_game
-from brain_games.cli import welcome_user
+
 
 def get_rules():
     return "Find the greatest common divisor of given numbers."
