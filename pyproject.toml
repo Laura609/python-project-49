@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hexlet-code"
+name = "brain-games"
 version = "0.1.0"
 description = "A collection of brain games implemented in Python for educational purposes."
 authors = ["Laura609 <laura.metnietse@gmail.com>"]
@@ -11,7 +11,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.8"
 prompt = "^0.4.1"
 brain_games = { path = "brain_games" }
 
