@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "brain-games"
+name = "hexlet-code"
 version = "0.1.0"
 description = "A collection of brain games implemented in Python for educational purposes."
 authors = ["Laura609 <laura.metnietse@gmail.com>"]
