@@ -1,7 +1,6 @@
 # Brain Games
 
-![Maintainability](https://api.codeclimate.com/v1/badges/58fe0208f7f25471a0f7/maintainability)
-![CI](https://github.com/Laura609/python-project-49/workflows/Hexlet%20CI/badge.svg)
+![Maintainability](https://codeclimate.com/github/Laura609/python-project-49/badges/maintainability.svg)
 
 Добро пожаловать в проект **Brain Games**! Это набор логических игр для тренировки вашего мышления. Каждая игра ставит перед вами задачу, и ваша цель — ответить на вопросы как можно быстрее и правильнее.
 
