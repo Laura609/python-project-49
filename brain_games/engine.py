@@ -16,7 +16,8 @@ def run_game(generate_question, get_rules, name):
         user_answer = prompt.string("Your answer: ").lower()
 
         if user_answer != correct_answer:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             return
 
